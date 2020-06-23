@@ -2,8 +2,8 @@
   {
     "icon": "fa fa-home",
     "slug": "external",
-    "title": "Volver al Inicio",
-    "path": "../index.html"
+    "title": "Volver al inicio",
+    "path": "index.html"
   },  
   {
     "icon": "fa fa-play-circle",
@@ -15,37 +15,56 @@
     "icon": "fa fa-play-circle",
     "slug": "generalidades",
     "title": "1. Generalidades del cultivo de plátano",
-    "path": "pages/1-generalidades.html"
+    "path": "pages/tema-1.html"
   },
   {
     "icon": "fa fa-play-circle",
-    "slug": "caracteristicas-morfoloficas",
+    "slug": "caracteristicas-morfologicas",
     "title": "2. Características morfológicas",
-    "path": "pages/2-caracteristicas-morfologicas.html"
+    "path": "pages/tema-2.html"  
   },
   {
     "icon": "fa fa-file-text-o",
     "slug": "aspectos-fenologicos",
     "title": "3. Aspectos fenológicos",
-    "path": "pages/3-aspectos-fenologicos.html"
-  },  
+    "path": "pages/tema-3.html"
+  },
   {
     "icon": "fa fa-play-circle",
     "slug": "variedades",
     "title": "4. Variedades",
-    "path": "pages/4-variedades.html"
+    "path": "pages/tema-4.html"
+  },
+  {
+    "icon": "fa fa-play-circle",
+    "slug": "condiciones-agroecologicas",
+    "title": "5. Condiciones agroecológicas",
+    "path": "pages/tema-5.html"
   },
   {
     "icon": "fa fa-file-text-o",
-    "slug": "condiciones-agroecologicas",
-    "title": "5. Condiciones agroecológicas",
-    "path": "pages/5-condiciones-agroecologicas.html"
-  },  
-  {
-    "icon": "fa fa-play-circle",
-    "slug": "fisiologia-platano",
+    "slug": "fisiologia",
     "title": "6. Fisiología del plátano",
-    "path": "pages/6-fisiologia-platano.html"
-  }
-
+    "path": "pages/tema-6.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "cambios-fisicoquimicos",
+        "title": "6.1 Cambios fisicoquímicos",
+        "path": "pages/tema-61.html"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "composicion-nutricional",
+        "title": "6.2 Composición nutricional",
+        "path": "pages/tema-62.html"
+      }
+    ]    
+  },        
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
+  }    
 ]

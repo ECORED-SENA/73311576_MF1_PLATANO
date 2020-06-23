@@ -27,23 +27,18 @@
 
 .page-header-textura{
     .page-header {
-        background: url(../images/header/header_pattern.svg) scroll top left repeat $brand-color-dark !important;
+        .container {
+            background: url(../images/header/header_pattern.svg) scroll top left repeat $brand-color-dark !important;
+        }
     }
 }
 
-
 .curso-subtitulo {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $primary;
-}
-
-.curso-titulo {
-    color: $primary;
-    font-weight: 600;
-    font-size: 2.5rem;
 }
 
 .curso-descripcion {
@@ -64,6 +59,7 @@
     .curso-descripcion {
         color: $text-color-dark !important;
     }
+    
 }
 
 .theme-light {
@@ -76,6 +72,13 @@
         color: $text-color-light !important;
     }
 }
+
+.curso-titulo {
+    color: $text-color-dark !important;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 .header-ecored {
 
     margin: 3rem 0;
@@ -83,69 +86,50 @@
 
     h1 {
         font-size: 1.1*$h1-font-size;
-
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: $h1-font-size;
-            width: 50px;
-            height: 4px;
-            margin: 1rem 0 2rem 0;
-            background-color: $base-color-highlight;
-        }
     }
 
     h2 {
         font-size: 1.2*$h2-font-size;
-
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: $h2-font-size;
-            width: 50px;
-            height: 4px;
-            margin: 1rem 0 2rem 0;
-            background-color: lighten($base-color-highlight, 5%);
-        }        
     }
 
     h3 {
         font-size: 1.2*$h3-font-size;
-
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: $h3-font-size;
-            width: 50px;
-            height: 4px;
-            margin: 1rem 0 2rem 0;
-            background-color: lighten($base-color-highlight, 10%);
-        }        
     }
 
     h4 {
         font-size: 1.2*$h4-font-size;
-
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: $h4-font-size;
-            width: 50px;
-            height: 4px;
-            margin: 1rem 0 2rem 0;
-            background-color: lighten($base-color-highlight, 15%);
-        }        
     }
 
     h5 {
         font-size: 1.2*$h5-font-size;
     }
 
+    &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        width: 50px;
+        height: 4px;
+        background-color: $base-color-highlight;
+    }  
+    &.-recuadro {
+        color: $brand-color-light;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-weight: 700;
 
+        span.number {
+            background-color: $brand-color-light;
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            margin-right: 1.5rem;
+            line-height: 55px;
+            text-align: center;
+        }
+    }
 }
 
 
